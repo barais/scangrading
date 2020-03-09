@@ -7,33 +7,11 @@ import java.awt.Graphics
 import java.awt.Graphics2D
 import java.awt.Rectangle
 import java.awt.RenderingHints
-import java.awt.event.*
 import java.awt.geom.AffineTransform
-import java.awt.image.*
 import java.awt.image.BufferedImage
-import java.io.*
-import java.nio.file.Files
-import java.nio.file.Path
-import java.nio.file.Paths
-import java.util.Iterator
-import java.util.List
-import java.util.Optional
-import java.util.stream.Stream
-import javax.imageio.ImageIO
-import javax.swing.*
-import javax.swing.event.MouseInputAdapter
-import org.eclipse.emf.ecore.resource.ResourceSet
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl
-import org.eclipse.emf.common.util.URI
-import java.util.Map
-import java.util.HashMap
-import fr.istic.tools.scanexam.GradingData
-import fr.istic.tools.scanexam.utils.ScanExamXtendFactory
-import fr.istic.tools.scanexam.utils.ScanExamExcelBackend
-import fr.istic.tools.scanexam.utils.ScanExamXtendUtils
-import fr.istic.tools.scanexam.gui.ScanExamController
+import java.io.File
+import javax.swing.JOptionPane
+import javax.swing.JPanel
 
 class ScanExamPanel extends JPanel {
 
@@ -56,7 +34,7 @@ class ScanExamPanel extends JPanel {
 
 	def updateQuestionZone() {
 		clip = control.extractQuestionZone
-		clip = scale(clip, BufferedImage.TYPE_BYTE_GRAY, size.width, size.height, 0.5, 0.5)
+		clip = scale(clip, BufferedImage.TYPE_BYTE_GRAY, size.width, size.height, 1, 1)
 		repaint
 	}
 
@@ -77,7 +55,7 @@ class ScanExamPanel extends JPanel {
 			super.paintComponent(g)
 			var Graphics2D g2 = (g as Graphics2D)
 			g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
-			g2.drawImage(clip, 10, 40, this)
+			g2.drawImage(clip, 100, 40, this)
 			val q = control.currentQuestion
 			println('''«q.markZone»''')
 			//g2.setColor(Color.PINK);
@@ -103,7 +81,7 @@ class ScanExamPanel extends JPanel {
 			var index=0
 
 			g2.setColor(Color.WHITE);
-			g2.fillRect(20,70, 80, control.currentQuestion.grades.size*30+30)
+			g2.fillRect(20,40, 80, control.currentQuestion.grades.size*30+30)
 			g2.setColor(Color.BLACK);
 			
 			val start = Math.max(0,control.currentGradeIndex-5).intValue

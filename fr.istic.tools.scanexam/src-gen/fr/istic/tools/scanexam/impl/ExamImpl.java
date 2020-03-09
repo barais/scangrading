@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link fr.istic.tools.scanexam.impl.ExamImpl#getFilepath <em>Filepath</em>}</li>
  *   <li>{@link fr.istic.tools.scanexam.impl.ExamImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link fr.istic.tools.scanexam.impl.ExamImpl#getFolderPath <em>Folder Path</em>}</li>
  *   <li>{@link fr.istic.tools.scanexam.impl.ExamImpl#getNumberOfPages <em>Number Of Pages</em>}</li>
@@ -40,6 +41,26 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * @generated
  */
 public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
+	/**
+	 * The default value of the '{@link #getFilepath() <em>Filepath</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFilepath()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String FILEPATH_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getFilepath() <em>Filepath</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFilepath()
+	 * @generated
+	 * @ordered
+	 */
+	protected String filepath = FILEPATH_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -154,7 +175,27 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public String getFilepath() {
+		return filepath;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFilepath(String newFilepath) {
+		String oldFilepath = filepath;
+		filepath = newFilepath;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ScanexamPackage.EXAM__FILEPATH, oldFilepath, filepath));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getLabel() {
 		return label;
 	}
@@ -164,7 +205,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setLabel(String newLabel) {
 		String oldLabel = label;
 		label = newLabel;
@@ -177,7 +217,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getFolderPath() {
 		return folderPath;
 	}
@@ -187,7 +226,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setFolderPath(String newFolderPath) {
 		String oldFolderPath = folderPath;
 		folderPath = newFolderPath;
@@ -200,7 +238,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getNumberOfPages() {
 		return numberOfPages;
 	}
@@ -210,7 +247,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setNumberOfPages(int newNumberOfPages) {
 		int oldNumberOfPages = numberOfPages;
 		numberOfPages = newNumberOfPages;
@@ -223,7 +259,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getScale() {
 		return scale;
 	}
@@ -233,7 +268,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setScale(int newScale) {
 		int oldScale = scale;
 		scale = newScale;
@@ -246,7 +280,6 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Question> getQuestions() {
 		if (questions == null) {
 			questions = new EObjectContainmentEList<Question>(Question.class, this, ScanexamPackage.EXAM__QUESTIONS);
@@ -276,6 +309,8 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case ScanexamPackage.EXAM__FILEPATH:
+				return getFilepath();
 			case ScanexamPackage.EXAM__LABEL:
 				return getLabel();
 			case ScanexamPackage.EXAM__FOLDER_PATH:
@@ -299,6 +334,9 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case ScanexamPackage.EXAM__FILEPATH:
+				setFilepath((String)newValue);
+				return;
 			case ScanexamPackage.EXAM__LABEL:
 				setLabel((String)newValue);
 				return;
@@ -327,6 +365,9 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case ScanexamPackage.EXAM__FILEPATH:
+				setFilepath(FILEPATH_EDEFAULT);
+				return;
 			case ScanexamPackage.EXAM__LABEL:
 				setLabel(LABEL_EDEFAULT);
 				return;
@@ -354,6 +395,8 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case ScanexamPackage.EXAM__FILEPATH:
+				return FILEPATH_EDEFAULT == null ? filepath != null : !FILEPATH_EDEFAULT.equals(filepath);
 			case ScanexamPackage.EXAM__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 			case ScanexamPackage.EXAM__FOLDER_PATH:
@@ -378,7 +421,9 @@ public class ExamImpl extends MinimalEObjectImpl.Container implements Exam {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (label: ");
+		result.append(" (filepath: ");
+		result.append(filepath);
+		result.append(", label: ");
 		result.append(label);
 		result.append(", folderPath: ");
 		result.append(folderPath);

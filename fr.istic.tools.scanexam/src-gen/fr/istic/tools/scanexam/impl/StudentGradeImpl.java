@@ -112,7 +112,6 @@ public class StudentGradeImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getStudentID() {
 		return studentID;
 	}
@@ -122,7 +121,6 @@ public class StudentGradeImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setStudentID(String newStudentID) {
 		String oldStudentID = studentID;
 		studentID = newStudentID;
@@ -135,7 +133,6 @@ public class StudentGradeImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public long getNumAnonymat() {
 		return numAnonymat;
 	}
@@ -145,7 +142,6 @@ public class StudentGradeImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setNumAnonymat(long newNumAnonymat) {
 		long oldNumAnonymat = numAnonymat;
 		numAnonymat = newNumAnonymat;
@@ -158,7 +154,6 @@ public class StudentGradeImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<QuestionGrade> getQuestionGrades() {
 		if (questionGrades == null) {
 			questionGrades = new EObjectContainmentEList<QuestionGrade>(QuestionGrade.class, this, ScanexamPackage.STUDENT_GRADE__QUESTION_GRADES);

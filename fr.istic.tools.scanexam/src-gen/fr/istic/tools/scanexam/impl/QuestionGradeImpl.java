@@ -125,7 +125,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Question getQuestion() {
 		if (question != null && question.eIsProxy()) {
 			InternalEObject oldQuestion = (InternalEObject)question;
@@ -152,7 +151,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setQuestion(Question newQuestion) {
 		Question oldQuestion = question;
 		question = newQuestion;
@@ -165,7 +163,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isValidated() {
 		return validated;
 	}
@@ -175,7 +172,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setValidated(boolean newValidated) {
 		boolean oldValidated = validated;
 		validated = newValidated;
@@ -188,7 +184,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getFilename() {
 		return filename;
 	}
@@ -198,7 +193,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setFilename(String newFilename) {
 		String oldFilename = filename;
 		filename = newFilename;
@@ -211,7 +205,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getGrade() {
 		return grade;
 	}
@@ -221,7 +214,6 @@ public class QuestionGradeImpl extends MinimalEObjectImpl.Container implements Q
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setGrade(String newGrade) {
 		String oldGrade = grade;
 		grade = newGrade;

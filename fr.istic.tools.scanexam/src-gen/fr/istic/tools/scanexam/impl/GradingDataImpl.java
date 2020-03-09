@@ -138,7 +138,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getSolutionPath() {
 		return solutionPath;
 	}
@@ -148,7 +147,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setSolutionPath(String newSolutionPath) {
 		String oldSolutionPath = solutionPath;
 		solutionPath = newSolutionPath;
@@ -161,7 +159,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getExcelFileName() {
 		return excelFileName;
 	}
@@ -171,7 +168,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setExcelFileName(String newExcelFileName) {
 		String oldExcelFileName = excelFileName;
 		excelFileName = newExcelFileName;
@@ -184,7 +180,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<File> getImages() {
 		if (images == null) {
 			images = new EDataTypeEList<File>(File.class, this, ScanexamPackage.GRADING_DATA__IMAGES);
@@ -197,7 +192,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Exam getExam() {
 		return exam;
 	}
@@ -222,7 +216,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setExam(Exam newExam) {
 		if (newExam != exam) {
 			NotificationChain msgs = null;
@@ -242,7 +235,6 @@ public class GradingDataImpl extends MinimalEObjectImpl.Container implements Gra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<StudentGrade> getGrades() {
 		if (grades == null) {
 			grades = new EObjectContainmentEList<StudentGrade>(StudentGrade.class, this, ScanexamPackage.GRADING_DATA__GRADES);

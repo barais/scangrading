@@ -1,40 +1,37 @@
 package fr.istic.tools.scanexam.gui
 
 import fr.istic.tools.scanexam.instances.PFOExams
-
-import java.awt.FlowLayout
-import java.awt.event.*
-import java.awt.image.*
-import java.io.*
-import javax.imageio.ImageIO
-import javax.swing.BoxLayout
-import javax.swing.JFrame
-import javax.swing.JPanel
-import javax.swing.event.MouseInputAdapter
-import java.awt.event.ActionEvent
-import java.beans.PropertyChangeListener
-import fr.istic.tools.scanexam.utils.ScanExamXtendFactory
-import fr.istic.tools.scanexam.gui.ScanExamPanel
-import java.util.function.Function
-import javax.swing.KeyStroke
-import javax.swing.JComponent
-import javax.swing.AbstractAction
-import javax.swing.InputMap
-import javax.swing.ActionMap
-import javax.swing.JScrollPane
-import javax.swing.JButton
-import java.util.List
-import fr.istic.tools.scanexam.utils.ScanExamXtendUtils
 import fr.istic.tools.scanexam.utils.ScanExamExcelBackend
+import fr.istic.tools.scanexam.utils.ScanExamXtendFactory
+import fr.istic.tools.scanexam.utils.ScanExamXtendUtils
+import java.awt.GridLayout
+import java.awt.event.ActionEvent
+import java.awt.event.InputEvent
+import java.awt.event.KeyEvent
+import java.awt.event.WindowAdapter
+import java.awt.event.WindowEvent
+import java.io.File
+import java.io.IOException
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.Date
-import javax.swing.JOptionPane
+import java.util.List
 import java.util.Timer
 import java.util.TimerTask
+import java.util.function.Function
+import javax.swing.AbstractAction
+import javax.swing.ActionMap
+import javax.swing.BoxLayout
+import javax.swing.InputMap
+import javax.swing.JButton
+import javax.swing.JComponent
+import javax.swing.JFrame
 import javax.swing.JLabel
-import java.awt.GridLayout
+import javax.swing.JOptionPane
+import javax.swing.JPanel
+import javax.swing.JScrollPane
 import javax.swing.JTabbedPane
+import javax.swing.KeyStroke
 
 class ScanExamMain {
 

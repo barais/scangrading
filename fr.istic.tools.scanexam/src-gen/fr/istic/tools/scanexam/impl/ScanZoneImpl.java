@@ -158,7 +158,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getX() {
 		return x;
 	}
@@ -168,7 +167,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setX(int newX) {
 		int oldX = x;
 		x = newX;
@@ -181,7 +179,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getY() {
 		return y;
 	}
@@ -191,7 +188,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setY(int newY) {
 		int oldY = y;
 		y = newY;
@@ -204,7 +200,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getW() {
 		return w;
 	}
@@ -214,7 +209,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setW(int newW) {
 		int oldW = w;
 		w = newW;
@@ -227,7 +221,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getH() {
 		return h;
 	}
@@ -237,7 +230,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setH(int newH) {
 		int oldH = h;
 		h = newH;
@@ -250,7 +242,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getPage() {
 		return page;
 	}
@@ -260,7 +251,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setPage(int newPage) {
 		int oldPage = page;
 		page = newPage;
@@ -273,7 +263,6 @@ public class ScanZoneImpl extends MinimalEObjectImpl.Container implements ScanZo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String toString() {
 		int _x = this.getX();
 		String _plus = ("[" + Integer.valueOf(_x));

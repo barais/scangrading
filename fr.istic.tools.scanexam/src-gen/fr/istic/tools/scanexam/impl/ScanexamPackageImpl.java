@@ -4,6 +4,7 @@ package fr.istic.tools.scanexam.impl;
 
 import fr.istic.tools.scanexam.Exam;
 import fr.istic.tools.scanexam.GradingData;
+import fr.istic.tools.scanexam.InfoField;
 import fr.istic.tools.scanexam.Question;
 import fr.istic.tools.scanexam.QuestionGrade;
 import fr.istic.tools.scanexam.ScanZone;
@@ -36,6 +37,13 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * @generated
 	 */
 	private EClass examEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass infoFieldEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +156,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getExam() {
 		return examEClass;
 	}
@@ -158,8 +165,7 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EAttribute getExam_Label() {
+	public EAttribute getExam_Filepath() {
 		return (EAttribute)examEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -168,8 +174,7 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EAttribute getExam_FolderPath() {
+	public EAttribute getExam_Label() {
 		return (EAttribute)examEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -178,8 +183,7 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EAttribute getExam_NumberOfPages() {
+	public EAttribute getExam_FolderPath() {
 		return (EAttribute)examEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -188,8 +192,7 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EAttribute getExam_Scale() {
+	public EAttribute getExam_NumberOfPages() {
 		return (EAttribute)examEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -198,9 +201,8 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EReference getExam_Questions() {
-		return (EReference)examEClass.getEStructuralFeatures().get(4);
+	public EAttribute getExam_Scale() {
+		return (EAttribute)examEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -208,7 +210,24 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public EReference getExam_Questions() {
+		return (EReference)examEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getInfoField() {
+		return infoFieldEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getQuestion() {
 		return questionEClass;
 	}
@@ -218,7 +237,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestion_Label() {
 		return (EAttribute)questionEClass.getEStructuralFeatures().get(0);
 	}
@@ -228,7 +246,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getQuestion_Zone() {
 		return (EReference)questionEClass.getEStructuralFeatures().get(1);
 	}
@@ -238,7 +255,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getQuestion_MarkZone() {
 		return (EReference)questionEClass.getEStructuralFeatures().get(2);
 	}
@@ -248,7 +264,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestion_DefaultGradeIndex() {
 		return (EAttribute)questionEClass.getEStructuralFeatures().get(3);
 	}
@@ -258,7 +273,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestion_Grades() {
 		return (EAttribute)questionEClass.getEStructuralFeatures().get(4);
 	}
@@ -268,7 +282,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestion_Feedback() {
 		return (EAttribute)questionEClass.getEStructuralFeatures().get(5);
 	}
@@ -278,7 +291,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestion_Weight() {
 		return (EAttribute)questionEClass.getEStructuralFeatures().get(6);
 	}
@@ -288,7 +300,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getScanZone() {
 		return scanZoneEClass;
 	}
@@ -298,7 +309,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getScanZone_X() {
 		return (EAttribute)scanZoneEClass.getEStructuralFeatures().get(0);
 	}
@@ -308,7 +318,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getScanZone_Y() {
 		return (EAttribute)scanZoneEClass.getEStructuralFeatures().get(1);
 	}
@@ -318,7 +327,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getScanZone_W() {
 		return (EAttribute)scanZoneEClass.getEStructuralFeatures().get(2);
 	}
@@ -328,7 +336,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getScanZone_H() {
 		return (EAttribute)scanZoneEClass.getEStructuralFeatures().get(3);
 	}
@@ -338,7 +345,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getScanZone_Page() {
 		return (EAttribute)scanZoneEClass.getEStructuralFeatures().get(4);
 	}
@@ -348,7 +354,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EOperation getScanZone__ToString() {
 		return scanZoneEClass.getEOperations().get(0);
 	}
@@ -358,7 +363,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getGradingData() {
 		return gradingDataEClass;
 	}
@@ -368,7 +372,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getGradingData_SolutionPath() {
 		return (EAttribute)gradingDataEClass.getEStructuralFeatures().get(0);
 	}
@@ -378,7 +381,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getGradingData_ExcelFileName() {
 		return (EAttribute)gradingDataEClass.getEStructuralFeatures().get(1);
 	}
@@ -388,7 +390,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getGradingData_Images() {
 		return (EAttribute)gradingDataEClass.getEStructuralFeatures().get(2);
 	}
@@ -398,7 +399,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getGradingData_Exam() {
 		return (EReference)gradingDataEClass.getEStructuralFeatures().get(3);
 	}
@@ -408,7 +408,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getGradingData_Grades() {
 		return (EReference)gradingDataEClass.getEStructuralFeatures().get(4);
 	}
@@ -418,7 +417,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getStudentGrade() {
 		return studentGradeEClass;
 	}
@@ -428,7 +426,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getStudentGrade_StudentID() {
 		return (EAttribute)studentGradeEClass.getEStructuralFeatures().get(0);
 	}
@@ -438,7 +435,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getStudentGrade_NumAnonymat() {
 		return (EAttribute)studentGradeEClass.getEStructuralFeatures().get(1);
 	}
@@ -448,7 +444,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getStudentGrade_QuestionGrades() {
 		return (EReference)studentGradeEClass.getEStructuralFeatures().get(2);
 	}
@@ -458,7 +453,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getQuestionGrade() {
 		return questionGradeEClass;
 	}
@@ -468,7 +462,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getQuestionGrade_Question() {
 		return (EReference)questionGradeEClass.getEStructuralFeatures().get(0);
 	}
@@ -478,7 +471,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestionGrade_Validated() {
 		return (EAttribute)questionGradeEClass.getEStructuralFeatures().get(1);
 	}
@@ -488,7 +480,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestionGrade_Filename() {
 		return (EAttribute)questionGradeEClass.getEStructuralFeatures().get(2);
 	}
@@ -498,7 +489,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getQuestionGrade_Grade() {
 		return (EAttribute)questionGradeEClass.getEStructuralFeatures().get(3);
 	}
@@ -508,7 +498,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EDataType getFile() {
 		return fileEDataType;
 	}
@@ -518,7 +507,6 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ScanexamFactory getScanexamFactory() {
 		return (ScanexamFactory)getEFactoryInstance();
 	}
@@ -543,11 +531,14 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 
 		// Create classes and their features
 		examEClass = createEClass(EXAM);
+		createEAttribute(examEClass, EXAM__FILEPATH);
 		createEAttribute(examEClass, EXAM__LABEL);
 		createEAttribute(examEClass, EXAM__FOLDER_PATH);
 		createEAttribute(examEClass, EXAM__NUMBER_OF_PAGES);
 		createEAttribute(examEClass, EXAM__SCALE);
 		createEReference(examEClass, EXAM__QUESTIONS);
+
+		infoFieldEClass = createEClass(INFO_FIELD);
 
 		questionEClass = createEClass(QUESTION);
 		createEAttribute(questionEClass, QUESTION__LABEL);
@@ -619,14 +610,18 @@ public class ScanexamPackageImpl extends EPackageImpl implements ScanexamPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		infoFieldEClass.getESuperTypes().add(this.getQuestion());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(examEClass, Exam.class, "Exam", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getExam_Filepath(), theEcorePackage.getEString(), "filepath", null, 0, 1, Exam.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getExam_Label(), theEcorePackage.getEString(), "label", null, 0, 1, Exam.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getExam_FolderPath(), theEcorePackage.getEString(), "folderPath", null, 0, 1, Exam.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getExam_NumberOfPages(), theEcorePackage.getEInt(), "numberOfPages", null, 0, 1, Exam.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getExam_Scale(), theEcorePackage.getEInt(), "scale", null, 0, 1, Exam.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getExam_Questions(), this.getQuestion(), null, "questions", null, 0, -1, Exam.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(infoFieldEClass, InfoField.class, "InfoField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(questionEClass, Question.class, "Question", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getQuestion_Label(), theEcorePackage.getEString(), "label", null, 0, 1, Question.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

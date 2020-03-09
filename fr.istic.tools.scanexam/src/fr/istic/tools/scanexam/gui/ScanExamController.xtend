@@ -43,6 +43,7 @@ class ScanExamController {
 
 	def extractQuestionZone() {
 		val q = currentQuestion
+		System.err.println(q.zone)
 		image.getSubimage(q.zone.x, q.zone.y, q.zone.w, q.zone.h)
 	}
 

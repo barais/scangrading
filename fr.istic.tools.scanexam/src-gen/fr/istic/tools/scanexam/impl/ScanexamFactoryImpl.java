@@ -60,6 +60,7 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case ScanexamPackage.EXAM: return createExam();
+			case ScanexamPackage.INFO_FIELD: return createInfoField();
 			case ScanexamPackage.QUESTION: return createQuestion();
 			case ScanexamPackage.SCAN_ZONE: return createScanZone();
 			case ScanexamPackage.GRADING_DATA: return createGradingData();
@@ -105,7 +106,6 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Exam createExam() {
 		ExamImpl exam = new ExamImpl();
 		return exam;
@@ -116,7 +116,16 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public InfoField createInfoField() {
+		InfoFieldImpl infoField = new InfoFieldImpl();
+		return infoField;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Question createQuestion() {
 		QuestionImpl question = new QuestionImpl();
 		return question;
@@ -127,7 +136,6 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ScanZone createScanZone() {
 		ScanZoneImpl scanZone = new ScanZoneImpl();
 		return scanZone;
@@ -138,7 +146,6 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GradingData createGradingData() {
 		GradingDataImpl gradingData = new GradingDataImpl();
 		return gradingData;
@@ -149,7 +156,6 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public StudentGrade createStudentGrade() {
 		StudentGradeImpl studentGrade = new StudentGradeImpl();
 		return studentGrade;
@@ -160,7 +166,6 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public QuestionGrade createQuestionGrade() {
 		QuestionGradeImpl questionGrade = new QuestionGradeImpl();
 		return questionGrade;
@@ -189,7 +194,6 @@ public class ScanexamFactoryImpl extends EFactoryImpl implements ScanexamFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ScanexamPackage getScanexamPackage() {
 		return (ScanexamPackage)getEPackage();
 	}

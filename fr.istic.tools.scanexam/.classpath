@@ -10,6 +10,39 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="lib" path="lib/poi-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-calibration-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-core-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-feature-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-geo-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-io-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-ip-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-learning-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-recognition-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-sfm-0.35.jar"/>
+	<classpathentry kind="lib" path="lib/boofcv-types-0.35.jar" sourcepath="/home/barais/.m2/repository/org/boofcv/boofcv-types/0.35/boofcv-types-0.35-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-compress-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/ddogleg-0.17.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-cdense-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-core-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-ddense-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-dsparse-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-fdense-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-simple-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/ejml-zdense-0.38.jar"/>
+	<classpathentry kind="lib" path="lib/georegression-0.21.jar"/>
+	<classpathentry kind="lib" path="lib/io-0.4.jar"/>
+	<classpathentry kind="lib" path="lib/jarchivelib-0.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/jsr250-api-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/learning-0.4.jar"/>
+	<classpathentry kind="lib" path="lib/main-0.4.jar"/>
+	<classpathentry kind="lib" path="lib/models-0.4.jar"/>
+	<classpathentry kind="lib" path="lib/protobuf-java-2.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/snakeyaml-1.23.jar"/>
+	<classpathentry kind="lib" path="lib/xz-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/zip4j-1.3.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

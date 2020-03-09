@@ -165,7 +165,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLabel() {
 		return label;
 	}
@@ -175,7 +174,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setLabel(String newLabel) {
 		String oldLabel = label;
 		label = newLabel;
@@ -188,7 +186,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ScanZone getZone() {
 		return zone;
 	}
@@ -213,7 +210,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setZone(ScanZone newZone) {
 		if (newZone != zone) {
 			NotificationChain msgs = null;
@@ -233,7 +229,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ScanZone getMarkZone() {
 		return markZone;
 	}
@@ -258,7 +253,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setMarkZone(ScanZone newMarkZone) {
 		if (newMarkZone != markZone) {
 			NotificationChain msgs = null;
@@ -278,7 +272,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getDefaultGradeIndex() {
 		return defaultGradeIndex;
 	}
@@ -288,7 +281,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setDefaultGradeIndex(int newDefaultGradeIndex) {
 		int oldDefaultGradeIndex = defaultGradeIndex;
 		defaultGradeIndex = newDefaultGradeIndex;
@@ -301,7 +293,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<String> getGrades() {
 		if (grades == null) {
 			grades = new EDataTypeEList<String>(String.class, this, ScanexamPackage.QUESTION__GRADES);
@@ -314,7 +305,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<String> getFeedback() {
 		if (feedback == null) {
 			feedback = new EDataTypeEList<String>(String.class, this, ScanexamPackage.QUESTION__FEEDBACK);
@@ -327,7 +317,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public double getWeight() {
 		return weight;
 	}
@@ -337,7 +326,6 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setWeight(double newWeight) {
 		double oldWeight = weight;
 		weight = newWeight;
